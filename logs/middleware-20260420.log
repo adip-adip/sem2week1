@@ -1,0 +1,183 @@
+2026-04-20 07:58:10.953 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-04-20 07:58:11.181 +05:45 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5150: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-04-20 07:58:31.301 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-04-20 07:58:31.501 +05:45 [INF] Now listening on: http://localhost:5150
+2026-04-20 07:58:31.505 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 07:58:31.506 +05:45 [INF] Hosting environment: Development
+2026-04-20 07:58:31.507 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-04-20 07:58:33.158 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-04-20 07:58:33.295 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 138.9327ms
+2026-04-20 07:58:33.583 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-04-20 07:58:33.743 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 160.4536ms
+2026-04-20 07:58:49.303 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/ - null null
+2026-04-20 07:58:49.312 +05:45 [WRN] Failed to determine the https port for redirect.
+2026-04-20 07:58:49.366 +05:45 [INF] [2026-04-20 02:13:49] GET / | User:Anonymous | Status:404 | Time:1.49ms
+2026-04-20 07:58:49.366 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/ - 404 0 null 63.7528ms
+2026-04-20 07:58:49.371 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5150/, Response status code: 404
+2026-04-20 07:58:53.845 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/ - null null
+2026-04-20 07:58:53.850 +05:45 [INF] [2026-04-20 02:13:53] GET / | User:Anonymous | Status:404 | Time:1.16ms
+2026-04-20 07:58:53.851 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/ - 404 0 null 5.9795ms
+2026-04-20 07:58:53.852 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5150/, Response status code: 404
+2026-04-20 08:00:28.971 +05:45 [INF] Application is shutting down...
+2026-04-20 08:00:31.196 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-04-20 08:00:31.410 +05:45 [INF] Now listening on: http://localhost:5150
+2026-04-20 08:00:31.414 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 08:00:31.415 +05:45 [INF] Hosting environment: Development
+2026-04-20 08:00:31.415 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-04-20 08:00:32.235 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-04-20 08:00:32.357 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 124.626ms
+2026-04-20 08:00:32.598 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-04-20 08:00:32.734 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.9886ms
+2026-04-20 08:00:58.548 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5150/api/Auth/login - application/json 56
+2026-04-20 08:00:58.559 +05:45 [WRN] Failed to determine the https port for redirect.
+2026-04-20 08:00:58.599 +05:45 [INF] Executing endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:00:58.634 +05:45 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(sem2week1.DTOS.LoginDto) on controller sem2week1.Controllers.AuthController (sem2week1).
+2026-04-20 08:00:58.859 +05:45 [INF] Executing action method sem2week1.Controllers.AuthController.Login (sem2week1) - Validation state: "Valid"
+2026-04-20 08:01:01.283 +05:45 [INF] Executed DbCommand (117ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."Email", u."EmailConfirmed", u."FirstName", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-04-20 08:01:01.729 +05:45 [INF] Executed DbCommand (10ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2026-04-20 08:01:01.766 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:01:01.790 +05:45 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-04-20 08:01:01.799 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:01:01.846 +05:45 [INF] Executed action method sem2week1.Controllers.AuthController.Login (sem2week1), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2977.6626ms.
+2026-04-20 08:01:01.863 +05:45 [INF] Executing OkObjectResult, writing value of type 'sem2week1.DTOS.Response.LoginResponse'.
+2026-04-20 08:01:01.890 +05:45 [INF] Executed action sem2week1.Controllers.AuthController.Login (sem2week1) in 3244.7297ms
+2026-04-20 08:01:01.893 +05:45 [INF] Executed endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:01:01.897 +05:45 [INF] [2026-04-20 02:15:58] POST /api/Auth/login | User:Anonymous | Status:200 | Time:3299.58ms
+2026-04-20 08:01:01.944 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5150/api/Auth/login - 200 null application/json; charset=utf-8 3396.5071ms
+2026-04-20 08:01:49.216 +05:45 [INF] Application is shutting down...
+2026-04-20 08:01:58.514 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-04-20 08:01:58.653 +05:45 [INF] Now listening on: http://localhost:5150
+2026-04-20 08:01:58.656 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 08:01:58.657 +05:45 [INF] Hosting environment: Development
+2026-04-20 08:01:58.657 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-04-20 08:02:10.598 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5150/api/Auth/login - application/json 56
+2026-04-20 08:02:10.648 +05:45 [WRN] Failed to determine the https port for redirect.
+2026-04-20 08:02:10.670 +05:45 [INF] Executing endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:02:10.693 +05:45 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(sem2week1.DTOS.LoginDto) on controller sem2week1.Controllers.AuthController (sem2week1).
+2026-04-20 08:02:12.231 +05:45 [INF] Executed DbCommand (49ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."Email", u."EmailConfirmed", u."FirstName", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-04-20 08:02:12.489 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2026-04-20 08:02:12.526 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:02:12.544 +05:45 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-04-20 08:02:12.551 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:02:12.581 +05:45 [INF] Executing OkObjectResult, writing value of type 'sem2week1.DTOS.Response.LoginResponse'.
+2026-04-20 08:02:12.597 +05:45 [INF] Executed action sem2week1.Controllers.AuthController.Login (sem2week1) in 1898.3192ms
+2026-04-20 08:02:12.600 +05:45 [INF] Executed endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:02:12.602 +05:45 [INF] [2026-04-20 02:17:10] POST /api/Auth/login | User:Anonymous | Status:200 | Time:1933.79ms
+2026-04-20 08:02:12.616 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5150/api/Auth/login - 200 null application/json; charset=utf-8 2019.749ms
+2026-04-20 08:02:46.701 +05:45 [INF] Application is shutting down...
+2026-04-20 08:03:42.979 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-04-20 08:03:43.127 +05:45 [INF] Now listening on: http://localhost:5150
+2026-04-20 08:03:43.130 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 08:03:43.131 +05:45 [INF] Hosting environment: Development
+2026-04-20 08:03:43.131 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-04-20 08:03:48.624 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5150/api/Auth/login - application/json 56
+2026-04-20 08:03:48.688 +05:45 [WRN] Failed to determine the https port for redirect.
+2026-04-20 08:03:48.721 +05:45 [INF] Executing endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:03:48.749 +05:45 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(sem2week1.DTOS.LoginDto) on controller sem2week1.Controllers.AuthController (sem2week1).
+2026-04-20 08:03:50.421 +05:45 [INF] Executed DbCommand (62ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."Email", u."EmailConfirmed", u."FirstName", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-04-20 08:03:50.836 +05:45 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2026-04-20 08:03:50.875 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:03:50.893 +05:45 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-04-20 08:03:50.901 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:03:50.936 +05:45 [INF] Executing OkObjectResult, writing value of type 'sem2week1.DTOS.Response.LoginResponse'.
+2026-04-20 08:03:50.952 +05:45 [INF] Executed action sem2week1.Controllers.AuthController.Login (sem2week1) in 2198.2797ms
+2026-04-20 08:03:50.955 +05:45 [INF] Executed endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:03:50.958 +05:45 [INF] [2026-04-20 02:18:48] POST /api/Auth/login | User:Anonymous | Status:200 | Time:2238.63ms
+2026-04-20 08:03:50.974 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5150/api/Auth/login - 200 null application/json; charset=utf-8 2352.1657ms
+2026-04-20 08:07:21.366 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5150/api/Auth/login - application/json 56
+2026-04-20 08:07:21.377 +05:45 [INF] Executing endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:07:21.378 +05:45 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(sem2week1.DTOS.LoginDto) on controller sem2week1.Controllers.AuthController (sem2week1).
+2026-04-20 08:07:21.448 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."Email", u."EmailConfirmed", u."FirstName", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-04-20 08:07:21.605 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2026-04-20 08:07:21.608 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:07:21.611 +05:45 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-04-20 08:07:21.612 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "Roles" AS r ON a."RoleId" = r."Id"
+WHERE a."UserId" = @__userId_0
+2026-04-20 08:07:21.614 +05:45 [INF] Executing OkObjectResult, writing value of type 'sem2week1.DTOS.Response.LoginResponse'.
+2026-04-20 08:07:21.614 +05:45 [INF] Executed action sem2week1.Controllers.AuthController.Login (sem2week1) in 236.0493ms
+2026-04-20 08:07:21.615 +05:45 [INF] Executed endpoint 'sem2week1.Controllers.AuthController.Login (sem2week1)'
+2026-04-20 08:07:21.615 +05:45 [INF] [2026-04-20 02:22:21] POST /api/Auth/login | User:Anonymous | Status:200 | Time:238.49ms
+2026-04-20 08:07:21.616 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5150/api/Auth/login - 200 null application/json; charset=utf-8 249.475ms

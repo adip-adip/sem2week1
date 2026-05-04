@@ -1,0 +1,283 @@
+2026-05-04 07:12:23.364 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-04 07:12:23.953 +05:45 [INF] Now listening on: http://localhost:5150
+2026-05-04 07:12:23.960 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 07:12:23.961 +05:45 [INF] Hosting environment: Development
+2026-05-04 07:12:23.962 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-05-04 07:12:25.728 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:12:26.041 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 316.4185ms
+2026-05-04 07:12:26.317 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/swagger-ui.css - null null
+2026-05-04 07:12:26.332 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/swagger-ui-bundle.js - null null
+2026-05-04 07:12:26.359 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-04 07:12:26.520 +05:45 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-04 07:12:26.521 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-04 07:12:26.526 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 167.0645ms
+2026-05-04 07:12:26.521 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-04 07:12:26.532 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/swagger-ui.css - 200 152034 text/css 216.9141ms
+2026-05-04 07:12:26.531 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 198.7326ms
+2026-05-04 07:12:27.221 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:12:27.480 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:12:27.540 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 319.229ms
+2026-05-04 07:15:35.338 +05:45 [INF] Application is shutting down...
+2026-05-04 07:20:34.336 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-04 07:20:34.494 +05:45 [INF] Now listening on: http://localhost:5150
+2026-05-04 07:20:34.497 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 07:20:34.497 +05:45 [INF] Hosting environment: Development
+2026-05-04 07:20:34.498 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-05-04 07:21:59.705 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:21:59.790 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 86.5922ms
+2026-05-04 07:22:00.114 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:22:00.199 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:22:00.214 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 101.0107ms
+2026-05-04 07:22:10.026 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:22:10.028 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 2.152ms
+2026-05-04 07:22:10.416 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:22:10.433 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:22:10.435 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 18.5458ms
+2026-05-04 07:31:22.395 +05:45 [INF] Application is shutting down...
+cellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-04 07:31:42.534 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-04 07:31:42.800 +05:45 [INF] Now listening on: http://localhost:5150
+2026-05-04 07:31:42.806 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 07:31:42.807 +05:45 [INF] Hosting environment: Development
+2026-05-04 07:31:42.807 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-05-04 07:31:43.513 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:31:43.744 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 233.7418ms
+2026-05-04 07:31:44.196 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:31:44.339 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:31:44.365 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 169.9505ms
+2026-05-04 07:32:48.438 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:32:48.449 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:32:48.451 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 13.0539ms
+2026-05-04 07:35:55.035 +05:45 [INF] Application is shutting down...
+cellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-04 07:36:10.361 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-04 07:36:10.529 +05:45 [INF] Now listening on: http://localhost:5150
+2026-05-04 07:36:10.534 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 07:36:10.535 +05:45 [INF] Hosting environment: Development
+2026-05-04 07:36:10.535 +05:45 [INF] Content root path: /home/susant/RiderProjects/sem2week1
+2026-05-04 07:36:11.986 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:36:12.090 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:36:12.106 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 121.3571ms
+2026-05-04 07:37:05.238 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:37:05.332 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 94.8241ms
+2026-05-04 07:37:05.641 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:37:05.649 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:37:05.651 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 10.29ms
+2026-05-04 07:39:58.288 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:39:58.292 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:39:58.293 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 5.1176ms
+2026-05-04 07:41:20.454 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:41:20.456 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 1.857ms
+2026-05-04 07:41:20.726 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:41:20.731 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagg2026-05-04 07:41:20.799 +05:45 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5150: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Micros2026-05-04 07:44:03.112 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:44:03.113 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 1.0285ms
+2026-05-04 07:44:03.748 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:44:03.752 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:44:03.753 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 5.3176ms
+2026-05-04 07:45:34.785 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:45:34.786 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 1.0462ms
+2026-05-04 07:45:35.149 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:45:35.156 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:45:35.157 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 8.653ms
+2026-05-04 07:47:22.475 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/index.html - null null
+2026-05-04 07:47:22.477 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/index.html - 200 null text/html;charset=utf-8 1.6213ms
+2026-05-04 07:47:24.337 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - null null
+2026-05-04 07:47:24.360 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action sem2week1.Controllers.AuthController.UploadProfilePicture (sem2week1) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 07:47:24.381 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5150/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 43.7059ms
+text, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-04 07:47:23.601 +05:45 [INF] User profile is available. Using '/home/susant/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-04 07:47:26.258 +05:45 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5150: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)

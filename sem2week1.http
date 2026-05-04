@@ -1,0 +1,202 @@
+@sem2week1_HostAddress = http://localhost:5150
+
+### Health Check
+GET {{sem2week1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+
+### Get All Students
+GET {{sem2week1_HostAddress}}/api/Student/getAll
+Accept: application/json
+
+
+### Add Test Student 1
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Doe",
+  "dateOfBirth": "2000-05-15T00:00:00",
+  "phone": "123-456-7890",
+  "email": "john.doe@example.com",
+  "address": "123 Main St, New York"
+}
+
+### Add Test Student 2
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 2,
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "dateOfBirth": "1998-03-20T00:00:00",
+  "phone": "234-567-8901",
+  "email": "jane.smith@example.com",
+  "address": "456 Oak Ave, Boston"
+}
+
+### Add Test Student 3
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 3,
+  "firstName": "Bob",
+  "lastName": "Johnson",
+  "dateOfBirth": "1995-08-10T00:00:00",
+  "phone": "345-678-9012",
+  "email": "bob.johnson@example.com",
+  "address": "789 Pine Rd, Chicago"
+}
+
+### Add Test Student 4
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 4,
+  "firstName": "Alice",
+  "lastName": "Williams",
+  "dateOfBirth": "2002-11-25T00:00:00",
+  "phone": "456-789-0123",
+  "email": "alice.williams@example.com",
+  "address": "321 Elm St, Los Angeles"
+}
+
+### Add Test Student 5
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 5,
+  "firstName": "Charlie",
+  "lastName": "Brown",
+  "dateOfBirth": "1990-07-05T00:00:00",
+  "phone": "567-890-1234",
+  "email": "charlie.brown@example.com",
+  "address": "654 Maple Dr, Houston"
+}
+
+### Add Test Student 6
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 6,
+  "firstName": "Diana",
+  "lastName": "Miller",
+  "dateOfBirth": "1993-09-18T00:00:00",
+  "phone": "678-901-2345",
+  "email": "diana.miller@example.com",
+  "address": "987 Cedar Ln, Phoenix"
+}
+
+### Add Test Student 7
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 7,
+  "firstName": "Edward",
+  "lastName": "Davis",
+  "dateOfBirth": "1988-12-30T00:00:00",
+  "phone": "789-012-3456",
+  "email": "edward.davis@example.com",
+  "address": "147 Birch Way, Philadelphia"
+}
+
+### Add Test Student 8
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 8,
+  "firstName": "Fiona",
+  "lastName": "Garcia",
+  "dateOfBirth": "2001-04-22T00:00:00",
+  "phone": "890-123-4567",
+  "email": "fiona.garcia@example.com",
+  "address": "258 Spruce St, San Antonio"
+}
+
+### Add Test Student 9
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 9,
+  "firstName": "George",
+  "lastName": "Rodriguez",
+  "dateOfBirth": "1997-06-14T00:00:00",
+  "phone": "901-234-5678",
+  "email": "george.rodriguez@example.com",
+  "address": "369 Willow Ave, San Diego"
+}
+
+### Add Test Student 10
+POST {{sem2week1_HostAddress}}/api/Student/add
+Content-Type: application/json
+
+{
+  "id": 10,
+  "firstName": "Hannah",
+  "lastName": "Martinez",
+  "dateOfBirth": "2003-01-08T00:00:00",
+  "phone": "012-345-6789",
+  "email": "hannah.martinez@example.com",
+  "address": "741 Ash Blvd, Dallas"
+}
+
+### ============ PERFORMANCE COMPARISON TESTS ============
+
+### Test 1: Get all students (no filter) - IQueryable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?method=iqueryable
+Accept: application/json
+
+
+### Test 2: Get all students (no filter) - IEnumerable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?method=ienumerable
+Accept: application/json
+
+
+### Test 3: Filter by MinAge=25 - IQueryable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?minAge=25&method=iqueryable
+Accept: application/json
+
+
+### Test 4: Filter by MinAge=25 - IEnumerable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?minAge=25&method=ienumerable
+Accept: application/json
+
+
+### Test 5: Filter by MaxAge=25 - IQueryable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?maxAge=25&method=iqueryable
+Accept: application/json
+
+
+### Test 6: Filter by MaxAge=25 - IEnumerable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?maxAge=25&method=ienumerable
+Accept: application/json
+
+
+### Test 7: Filter by Address containing "St" - IQueryable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?address=St&method=iqueryable
+Accept: application/json
+
+
+### Test 8: Filter by Address containing "St" - IEnumerable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?address=St&method=ienumerable
+Accept: application/json
+
+
+### Test 9: Combined filters - Age 20-30 and Address "Main" - IQueryable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?minAge=20&maxAge=30&address=Main&method=iqueryable
+Accept: application/json
+
+
+### Test 10: Combined filters - Age 20-30 and Address "Main" - IEnumerable
+GET {{sem2week1_HostAddress}}/api/Student/filtered?minAge=20&maxAge=30&address=Main&method=ienumerable
+Accept: application/json
