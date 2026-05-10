@@ -7,7 +7,8 @@ public class FileUploadOperationFilter : IParameterFilter
 {
     public void Apply(OpenApiParameter parameter, ParameterFilterContext context)
     {
-        if (context.ApiParameterDescription?.ParameterDescriptor?.ParameterType == typeof(IFormFile))
+        if (context.ApiParameterDescription?.ParameterDescriptor?.ParameterType == typeof(IFormFile) ||
+            context.ApiParameterDescription?.ParameterDescriptor?.ParameterType == typeof(IEnumerable<IFormFile>))
         {
             parameter.Schema = new OpenApiSchema
             {

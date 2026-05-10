@@ -119,6 +119,7 @@ public class AuthController : ControllerBase
     /// <returns>Success message if upload successful</returns>
     [HttpPost("profile/upload")]
     [Authorize]
+    [Consumes("multipart/form-data")]
     public async Task<IActionResult> UploadProfilePicture(IFormFile file)
     {
         if (file == null || file.Length == 0)

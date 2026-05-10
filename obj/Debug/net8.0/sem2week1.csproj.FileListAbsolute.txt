@@ -134,3 +134,4 @@
 /home/susant/RiderProjects/sem2week1/obj/Debug/net8.0/sem2week1.pdb
 /home/susant/RiderProjects/sem2week1/obj/Debug/net8.0/sem2week1.genruntimeconfig.cache
 /home/susant/RiderProjects/sem2week1/obj/Debug/net8.0/ref/sem2week1.dll
+/home/susant/RiderProjects/sem2week1/obj/Debug/net8.0/sem2week1.sourcelink.json
